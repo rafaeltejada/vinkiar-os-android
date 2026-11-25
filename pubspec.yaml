@@ -1,0 +1,116 @@
+name: vinkiar_flutter
+description: Sistema Operativo Relacional Vinkiar (SOR) v4.4 - Client App
+version: 1.0.0+3
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.1.2
+  package_info_plus: ^10.2.1
+  ota_update: ^7.1.0
+  battery_plus: ^6.1.0
+
+  speech_to_text: ^7.0.0
+
+  # Soberanía ZKP sin biometría (BIP-39, HKDF-SHA256, Keystore Storage)
+  bip39: ^1.0.6
+  crypto: ^3.0.5
+  flutter_secure_storage: ^11.2.0
+
+
+
+  # Criptografía y Base de Datos local (ZKA)
+  # Añade la nueva dependencia aquí, alineada con "flutter:"
+  # Elimina esta línea:
+  # argon2_or_builder: ^1.0.0
+  
+  # Añade la dependencia correcta:
+  pointycastle: ^3.7.4
+  
+  # ... (aquí van el resto de dependencias que ya tuvieras como sqflite, etc)
+  cryptography: ^2.5.0
+  local_auth: ^2.1.8
+
+  # Cliente oficial para Gemini / On-device abstraction
+  google_generative_ai: ^0.4.0
+
+  # Utilidades generales
+  uuid: ^4.3.3
+  path: ^1.9.0
+  path_provider: ^2.1.1
+  provider: ^6.1.2
+  web_socket_channel: 3.0.3
+  http: ^1.6.0
+  share_plus: ^13.3.0
+  file_picker: ^13.1.0  # Cambia a la versión compatible más reciente o ejecuta: flutter pub upgrade file_picker
+  # Integración de Pagos
+  flutter_stripe: ^10.1.1
+
+  # Diseño e Iconos
+  flutter_svg: ^2.0.9
+  google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.6
+  sqflite_sqlcipher: ^3.4.1
+
+  # Visor QR y Mapas Cyberpunk
+  mobile_scanner: ^5.2.3
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  geolocator: ^12.0.0
+  drift: 2.29.0
+  drift_sqflite: ^2.0.1
+  sqlcipher_flutter_libs: ^0.7.0+eol
+  sqlite3: 2.6.0
+  record: ^7.1.2
+  audioplayers: ^6.8.1
+  camera: ^0.12.1
+  video_player: ^2.14.1
+
+  # Notificaciones Push en Segundo Plano y Pantalla Bloqueada (ZKA)
+  firebase_core: ^3.12.1
+  firebase_messaging: ^15.2.4
+  flutter_local_notifications: ^18.0.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  build_runner: ^2.15.1
+  drift_dev: 2.29.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/Logo_Vinkiar_01.png
+    - assets/Logo_Vinkiar_03.5.png
+    - shorebird.yaml
+
+  # Configuración de fuentes customizadas (Phygital Cyber-Noir)
+  fonts:
+    - family: Outfit
+      fonts:
+        - asset: assets/fonts/Outfit-Regular.ttf
+        - asset: assets/fonts/Outfit-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Outfit-Bold.ttf
+          weight: 700
+    - family: JetBrains Mono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+        - asset: assets/fonts/JetBrainsMono-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/Logo_Vinkiar_01.png"
+  adaptive_icon_background: "#11F0B3" # Color Cyan
+  adaptive_icon_foreground: "assets/Logo_Vinkiar_01.png"

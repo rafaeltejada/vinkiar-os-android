@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stripe_publishable_key">pk_test_51TuGGD6jGrMB730L4T0bm7kXz3a0uZAXE4LLS8eTa1A3214C79WxR40Oaz4HMpZ4XpPoIQciFwhfXlIfC5w1f7TE004APrbSrE</string>
+    <string name="accessibility_service_desc">Permite al Centinela de Vinkiar OS detectar los 4 toques en el botón de volumen para activar la defensa física y el Ángel de la Guarda.</string>
+</resources>
